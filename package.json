@@ -1,0 +1,42 @@
+{
+  "name": "buddy-tracker",
+  "version": "1.0.0",
+  "description": "Shared Udemy Course Progress Tracker API with real-time stats and leaderboards",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "dev:server": "nodemon src/server.js",
+    "dev:client": "npm --prefix client run dev",
+    "build:client": "npm --prefix client run build",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": [
+    "udemy",
+    "tracker",
+    "leaderboard",
+    "express",
+    "mongoose"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.11.3",
+    "morgan": "^1.12.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.3.0",
+    "nodemon": "^3.1.14"
+  }
+}
